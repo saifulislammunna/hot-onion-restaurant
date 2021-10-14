@@ -1,5 +1,7 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 import logo  from '../../images/logo2.png';
+ 
 import './Header.css';
 const Header = () => {
     return (
@@ -9,7 +11,15 @@ const Header = () => {
                 <img className="logo" src={logo} alt="" />
               </div>
               <div className="right">
-                  <h2>this is left header</h2>
+                <div className="item-container">
+                <nav>
+                 <NavLink className="log-in" to ="/login">Log in</NavLink>
+                 <NavLink  className="sign-up"  to="/signup"><button>Sign up</button> </NavLink>
+                </nav>
+                          
+                         
+                        
+                </div>
               </div>
            </div>
         </div>
