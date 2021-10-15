@@ -35,6 +35,9 @@ function App() {
         <Route path="/signup">
         <Signup></Signup>
         </Route>
+        {/* <Route path="/">
+
+          </Route> */}
         <Route  path="*">
         <NotFound></NotFound>
         </Route>
