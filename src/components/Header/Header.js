@@ -1,5 +1,5 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import logo  from '../../images/logo2.png';
  
 import './Header.css';
@@ -8,13 +8,13 @@ const Header = () => {
         <div className="topbar">
            <div className="wrapper">
              <div className="left">
-                <img className="logo" src={logo} alt="" />
+                <Link to="/home"><img className="logo" src={logo} alt="" /></Link>
               </div>
               <div className="right">
                 <div className="item-container">
                 <nav>
                  <NavLink className="log-in" to ="/login">Log in</NavLink>
-                 <NavLink  className="sign-up"  to="/signup"><button>Sign up</button> </NavLink>
+                 <NavLink  className="sign-up"  to="/signup"><button className="btn-regular">Sign up</button> </NavLink>
                 </nav>
                           
                          

@@ -9,12 +9,14 @@ import Signup from './components/Signup/Signup';
 import Home from './components/Home/Home';
 import Banner from './components/Banner/Banner';
 import NotFound from './components/NotFound/NotFound';
+import { useEffect } from 'react';
  
  
  
 
 
 function App() {
+
   return (
     <div className="App">
       
