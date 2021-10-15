@@ -1,20 +1,21 @@
 import React from 'react';
 import { useState } from 'react';
 import { useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import Food from '../Food/Food';
 import './Home.css'
 const Home = () => {
 
     const [items, setItems] = useState([]);
     useEffect( () => {
-        fetch(`./items.JSON`)
+        fetch(`./items.json`)
         .then(res => res.json())
         .then(data => setItems(data));
     },[])
     return (
         <div>
             <div className="time-to-eat-food">
-                <h3 className="breakfast">Breakfast</h3>
+                <Link to="/home/breakfast" className="breakfast"> <h3 >Breakfast</h3> </Link>
                 <h3 className="breakfast">Launch</h3>
                 <h3 className="breakfast">Dinner</h3>
             </div>

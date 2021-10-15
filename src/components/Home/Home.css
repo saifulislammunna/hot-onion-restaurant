@@ -4,6 +4,11 @@
     align-items: center;
     justify-content: space-between;
 }
+.breakfast{
+     
+    text-decoration: none;
+    color: black;
+}
 .breakfast:hover{
    color: red;
    border-bottom: 3px solid red;
