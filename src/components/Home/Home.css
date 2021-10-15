@@ -1,0 +1,18 @@
+.items-container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 50px;
+   
+    
+     
+}
+.items{
+    display: grid;
+    grid-template-columns: 7fr 1fr;
+    margin-left: 20px;
+    align-items: center;
+    justify-content: center;
+    
+    
+}
+ 
