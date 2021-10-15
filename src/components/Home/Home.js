@@ -2,6 +2,7 @@ import React from 'react';
 import { useState } from 'react';
 import { useEffect } from 'react';
 import { Link } from 'react-router-dom';
+ 
 import Food from '../Food/Food';
 import './Home.css'
 const Home = () => {
@@ -15,7 +16,7 @@ const Home = () => {
     return (
         <div>
             <div className="time-to-eat-food">
-                <Link to="/home/breakfast" className="breakfast"> <h3 >Breakfast</h3> </Link>
+                <Link to="/home/breakfast" className="breakfast"> <h3    >Breakfast  </h3> </Link>
                 <h3 className="breakfast">Launch</h3>
                 <h3 className="breakfast">Dinner</h3>
             </div>

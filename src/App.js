@@ -9,7 +9,8 @@ import Signup from './components/Signup/Signup';
 import Home from './components/Home/Home';
 import Banner from './components/Banner/Banner';
 import NotFound from './components/NotFound/NotFound';
-import { useEffect } from 'react';
+ 
+import Breakfast from './components/Breakfast/Breakfast';
  
  
  
@@ -25,6 +26,7 @@ function App() {
      <Header></Header>
      <Banner></Banner>
       <Switch>
+      
         <Route  path="/home">
         <Home></Home>
         </Route>
@@ -37,9 +39,10 @@ function App() {
         <Route path="/signup">
         <Signup></Signup>
         </Route>
-        {/* <Route path="/">
-
+        {/* <Route  path="/breakfast">
+             <Breakfast></Breakfast>
           </Route> */}
+       
         <Route  path="*">
         <NotFound></NotFound>
         </Route>
