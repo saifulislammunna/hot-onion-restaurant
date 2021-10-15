@@ -1,3 +1,14 @@
+.time-to-eat-food{
+    padding: 50px 300px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.breakfast:hover{
+   color: red;
+   border-bottom: 3px solid red;
+}
+
 .items-container{
     display: grid;
     grid-template-columns: repeat(3,1fr);

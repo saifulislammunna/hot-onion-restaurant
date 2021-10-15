@@ -12,17 +12,24 @@ const Home = () => {
         .then(data => setItems(data));
     },[])
     return (
-        <div className="items">
-        <div className="items-container">
-        {
-                items.map(item => <Food 
-                item = {item}
-                key = {item.img}
-                >
-
-                </Food>)
-            }
-        </div>
+        <div>
+            <div className="time-to-eat-food">
+                <h3 className="breakfast">Breakfast</h3>
+                <h3 className="breakfast">Launch</h3>
+                <h3 className="breakfast">Dinner</h3>
+            </div>
+            <div className="items">
+            <div className="items-container">
+            {
+                    items.map(item => <Food 
+                    item = {item}
+                    key = {item.img}
+                    >
+    
+                    </Food>)
+                }
+            </div>
+            </div>
         </div>
     );
 };
