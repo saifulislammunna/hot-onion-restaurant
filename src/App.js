@@ -13,6 +13,7 @@ import NotFound from './components/NotFound/NotFound';
 import Breakfast from './components/Breakfast/Breakfast';
 import Lunch from './components/Lunch/Lunch';
 import Dinner from './components/Dinner/Dinner';
+import Footer from './components/Footer/Footer';
  
  
  
@@ -55,6 +56,7 @@ function App() {
         <NotFound></NotFound>
         </Route>
       </Switch>
+      <Footer></Footer>
      </BrowserRouter>
     </div>
   );

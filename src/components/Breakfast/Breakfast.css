@@ -1,0 +1,6 @@
+.time-to-eat-food{
+    padding: 50px 300px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
