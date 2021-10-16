@@ -1,14 +1,21 @@
+ 
 import React from 'react';
 import { useState } from 'react';
 import { useEffect } from 'react';
+ 
+
 import { Link } from 'react-router-dom';
 import Breakfast from '../Breakfast/Breakfast';
+import Cart from '../Cart/Cart';
  
 import Food from '../Food/Food';
 import './Home.css'
 const Home = () => {
 
     const [items, setItems] = useState([]);
+    // const [cart,setCart] = useState([]);
+
+
     useEffect( () => {
         fetch(`./items.json`)
         .then(res => res.json())
@@ -42,23 +49,32 @@ const Home = () => {
                <div className="p-5">
                <h1 className="text-start ">Why you choose us</h1>
                 <p className="text-start  ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam cumque debitis consequatur, magni corporis enim.</p>
-            </div>
+              </div>
 
-            <div className="items">
+             <div className="items">
  
-            <div className="items-container">
-            {
+                <div className="items-container">
+                 {
                     items.map(item => <Food 
                     item = {item}
                     key = {item.img}
                     >
     
                     </Food>)
-                }
-            </div>
-            </div>
+                  }
+                </div>
+             </div>
             
             </div>
+            {/* <Button>shop</Button> */}
+            {/* <Button> shop</Button> */}
+            {/* <div className="cart-container">
+                 <Cart cart={cart}>
+                  
+                     
+                      
+                 </Cart>
+               </div> */}
         </div>
     );
 };

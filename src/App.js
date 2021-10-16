@@ -1,6 +1,7 @@
  
 import { BrowserRouter,Switch,Route } from 'react-router-dom';
 import './App.css';
+ 
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 import Header from './components/Header/Header';
@@ -14,6 +15,7 @@ import Breakfast from './components/Breakfast/Breakfast';
 import Lunch from './components/Lunch/Lunch';
 import Dinner from './components/Dinner/Dinner';
 import Footer from './components/Footer/Footer';
+import BreakFastDetails from './components/BreakFastDetails/BreakFastDetails';
  
  
  
@@ -45,6 +47,9 @@ function App() {
         <Route exact path="/breakfast">
              <Breakfast></Breakfast>
         </Route>
+        <Route path="/breakfast/:id">
+              <BreakFastDetails></BreakFastDetails>
+          </Route>
         <Route exact path="/lunch">
              <Lunch></Lunch>
         </Route>

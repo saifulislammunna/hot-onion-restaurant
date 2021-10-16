@@ -20,7 +20,7 @@ const Breakfast = () => {
              <Link to="/dinner" className="breakfast"  > <h3    >Dinner</h3> </Link>
                 
              </div>
-            <div className="items-container">
+            <div  className="items-container">
             {
                     breakFasts.map(breakFast => <BreakfastFood
                         breakFast = {breakFast}

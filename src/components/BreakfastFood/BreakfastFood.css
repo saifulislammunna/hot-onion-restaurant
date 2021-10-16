@@ -12,3 +12,12 @@
     color: #000000;
     font-weight: 400;
 }
+.link{
+    
+    text-decoration: none;
+    color: black;
+   
+}
+.link:hover{
+    color: black;
+}

@@ -8,11 +8,15 @@ const Banner = () => {
         <div>
             
          <div className="background-image d-flex  align-items-center justify-content-center">
-             <input type="search" name="" placeholder="search your food items" id="" />
-              <button className="rounded btn-danger">Search</button>
+             <h1>Best food waiting for your belly </h1>
+             <div className="d-flex">
+             <input className="w-100" type="search" name="" placeholder="search your food items" id="" />
+             <button className="rounded btn-danger">Search</button>
+             </div>
          {/* <img  
             className="w-100" src= {img} alt="" /> */}
          </div>
+         
             
         </div>
     );

@@ -13,6 +13,7 @@ const LunchFood = (props) => {
               
              <p>  {description}</p>
              <h3>{price}</h3>
+             <button className="btn-danger">Add to Cart</button>
         </div>
        </div> 
     );

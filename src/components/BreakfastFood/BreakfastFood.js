@@ -1,10 +1,13 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
  
 import './BreakfastFood.css'
 const BreakfastFood = (props) => {
      
-        const {img,name,description,price} = props.breakFast;
+        const {img,name,description,price,id} = props.breakFast;
+        const url = `/breakfast/${id}`;
     return (
+        <Link className="link" to={url} >
         <div>
              
              <div className="p-5  item">
@@ -14,9 +17,14 @@ const BreakfastFood = (props) => {
               
              <p>  {description}</p>
              <h3>{price}</h3>
-        </div>      
+            
+            {/*  <button className="btn-danger">Add to Cart</button> */}
+             
+        </div>   
+            
 
         </div>
+        </Link>
        
     );
 };
