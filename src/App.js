@@ -11,6 +11,8 @@ import Banner from './components/Banner/Banner';
 import NotFound from './components/NotFound/NotFound';
  
 import Breakfast from './components/Breakfast/Breakfast';
+import Lunch from './components/Lunch/Lunch';
+import Dinner from './components/Dinner/Dinner';
  
  
  
@@ -39,9 +41,15 @@ function App() {
         <Route path="/signup">
         <Signup></Signup>
         </Route>
-        {/* <Route  path="/breakfast">
+        <Route exact path="/breakfast">
              <Breakfast></Breakfast>
-          </Route> */}
+        </Route>
+        <Route exact path="/lunch">
+             <Lunch></Lunch>
+        </Route>
+        <Route exact path="/dinner">
+             <Dinner></Dinner>
+        </Route>
        
         <Route  path="*">
         <NotFound></NotFound>

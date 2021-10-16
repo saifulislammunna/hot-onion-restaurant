@@ -1,35 +1,34 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
-import BreakfastFood from '../BreakfastFood/BreakfastFood';
-import './Breakfast.css'
-const Breakfast = () => {
-    
-    const [breakFasts, setBreakFasts ] = useState([]);
+import LunchFood from '../LunchFood/LunchFood';
+
+const Lunch = () => {
+    const [lunchs, setLunchs ] = useState([]);
     useEffect( () => {
-        fetch(`./breakfast.json`)
+        fetch(`./lunch.json`)
         .then(res => res.json())
-        .then(data => setBreakFasts(data));
+        .then(data => setLunchs(data));
     },[])
+    
     return (
-        <div  >
+        <div>
             <div className="time-to-eat-food">
              <Link to="/breakfast" className="breakfast"  > <h3    >Breakfast  </h3> </Link>
              <Link to="/lunch" className="breakfast"  > <h3    >Lunch  </h3> </Link>
              <Link to="/dinner" className="breakfast"  > <h3    >Dinner</h3> </Link>
-                
              </div>
-            <div className="items-container">
+             <div className="items-container">
             {
-                    breakFasts.map(breakFast => <BreakfastFood
-                        breakFast = {breakFast}
-                    key = {breakFast.img}
+                    lunchs.map(lunch => <LunchFood
+                         lunch= {lunch}
+                    key = {lunch.img}
                     >
     
-                    </BreakfastFood >)
+                    </LunchFood >)
                 }
             </div>
-            </div>
+        </div>
     );
 };
 
-export default Breakfast;
+export default Lunch;

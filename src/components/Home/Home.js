@@ -16,9 +16,10 @@ const Home = () => {
     return (
         <div>
             <div className="time-to-eat-food">
-                <Link to="/home/breakfast" className="breakfast"> <h3    >Breakfast  </h3> </Link>
-                <h3 className="breakfast">Launch</h3>
-                <h3 className="breakfast">Dinner</h3>
+                <Link to="/breakfast" className="breakfast"> <h3    >Breakfast  </h3> </Link>
+                <Link to="/lunch" className="breakfast"> <h3    >Lunch </h3> </Link>
+                <Link to="/breakfast" className="breakfast"> <h3    >Dinner </h3> </Link>
+                 
             </div>
             <div className="items">
             <div className="items-container">
