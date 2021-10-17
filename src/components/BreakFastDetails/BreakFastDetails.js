@@ -10,6 +10,7 @@ const BreakFastDetails = ( ) => {
      
     const {id} = useParams();
     const [breakFast,setBreakFast] = useState(  []);
+    
     // console.log(params);
     useEffect(()=>{
          
@@ -22,7 +23,16 @@ const BreakFastDetails = ( ) => {
                
                setBreakFast(selected);
         });
-    },[])
+    },[]);
+
+    /* const [foodAdded , setFoodAdded] = useState([]);
+
+    const handleFoodAdded = (breakfast) => {
+      const newFoodAdded = [...foodAdded,  breakfast];
+      setFoodAdded(newFoodAdded);
+   } */
+
+      
    /*  const temp = breakFast?.img?.substring(1,breakFast.img.length)
     const img = `../../../public/${temp}` */
     return (
@@ -43,13 +53,13 @@ const BreakFastDetails = ( ) => {
              <div className="d-flex justify-contect-center align-items-center">
              <h3>{breakFast.price}</h3>
                <div className="p-5  d-flex ">
-                   <btn className="btn-light   "><FontAwesomeIcon    icon={faMinus} /></btn>
-                   <input  id="phone-number" type="number" min="0" class="form-control text-center" value="1"/>
+                   <btn  className="btn-light  "><FontAwesomeIcon    icon={faMinus} /></btn>
+                   <input  id="phone-number" type="number" min="0" className="form-control text-center" value="1"/>
                    <btn className="btn-light"><FontAwesomeIcon    icon={faPlus} /></btn>
                </div>
              </div>
             
-             <Button className="btn-danger  rounded-pill btn    ">
+             <Button  className="btn-danger  rounded-pill btn    ">
                  <FontAwesomeIcon    icon={faShoppingCart} />
                  <span className="p-2 "> Add </span></Button>
            </div>

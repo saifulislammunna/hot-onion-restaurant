@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link, NavLink } from 'react-router-dom';
 import useFirebase from '../../hooks/useFirebase';
 import logo  from '../../images/logo2.png';
@@ -6,10 +6,19 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 /*  import img from '../../images/154fdf2f2759676a96e9aed653082276-removebg-preview.png' */
 import './Header.css';
 import { faShoppingCart } from '@fortawesome/free-solid-svg-icons';
+import AddToCart from '../../AddToCart/AddToCart';
  
 
 
 const Header = () => {
+  
+  
+
+ 
+   
+ 
+
+   
   
   // const cartIcon =  <FontAwesomeIcon  icon={faShoppingCart} />;
   const {user, logOut} = useFirebase();
@@ -23,8 +32,9 @@ const Header = () => {
              
                 <div className="item-container">
                     <div>
-                      <Link className="logo" to="/cart"> <FontAwesomeIcon  icon={faShoppingCart} /> </Link>
-                    
+                      <Link className="logo" to="/cart">  <FontAwesomeIcon  icon={faShoppingCart} />       </Link>
+                     {/*  <AddToCart></AddToCart> */}
+                      
                     </div>
                 <nav>
                  {
@@ -33,7 +43,7 @@ const Header = () => {
                    <NavLink className="log-in" to ="/login">Log in</NavLink>}
                  <NavLink  className="sign-up"  to="/signup"><button className="btn-regular">Sign up</button> </NavLink>
                 </nav>
-                          
+                       
                        
                         
                 </div>
