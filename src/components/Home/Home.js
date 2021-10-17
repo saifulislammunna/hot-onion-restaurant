@@ -29,7 +29,7 @@ const Home = () => {
                 <Link to="/breakfast" className="breakfast"> <h3    >Dinner </h3> </Link>
                  
             </div> */}
-            <div className="items">
+            <div className="items d-flex  align-items-center justify-content-center">
 
                 <Breakfast></Breakfast>
             {/* <div className="items-container">
@@ -45,13 +45,13 @@ const Home = () => {
             </div>
             <button className="btn-danger">Checkout your food</button>
 
-            <div>
+            <div   >
                <div className="p-5">
                <h1 className="text-start ">Why you choose us</h1>
                 <p className="text-start  ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam cumque debitis consequatur, magni corporis enim.</p>
               </div>
 
-             <div className="items">
+             <div className="items d-flex  align-items-center justify-content-center">
  
                 <div className="items-container">
                  {
