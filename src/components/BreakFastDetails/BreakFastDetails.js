@@ -10,7 +10,7 @@ const BreakFastDetails = ( ) => {
     // console.log(params);
     useEffect(()=>{
          
-        fetch(`https://raw.githubusercontent.com/saifulislammunna/hot-onion-restaurant/main/public/breakfast.json?token=AQL66ZTIQIZIHXMKQBSOJELBNMNVY`)
+        fetch(`https://raw.githubusercontent.com/saifulislammunna/hot-onion-restaurant/main/public/breakfast.json`)
         .then(res => res.json())
         .then(data => {
             console.log(data)
@@ -25,7 +25,7 @@ const BreakFastDetails = ( ) => {
     return (
         <div>
             <h3> Details of: {id}</h3>
-             <img src=  ""  alt="" />
+             <img src={breakFast.img}  alt="" />
              <h1>{breakFast.name} </h1>
              <p>{breakFast.description}</p>
              <h3>{breakFast.price}</h3>
